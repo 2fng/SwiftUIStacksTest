@@ -12,14 +12,18 @@ struct ContentView: View {
         ZStack {
             
             PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple, icon: "star.fill")
+                .scaleEffect(1)
                 .offset(x: 0, y: 190)
             
             PricingView(title: "Pro", price: "$19", textColor: .white, bgColor: .yellow, icon: "cursorarrow.rays")
+                .scaleEffect(0.95)
             
             PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "wand.and.rays")
                 .offset(x: 0, y: -210)
+                .scaleEffect(0.9)
             
         }
+        .padding()
     }
 }
 
