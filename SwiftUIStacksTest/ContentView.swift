@@ -10,8 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
+            
+            PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple, icon: "star.fill")
+                .offset(x: 0, y: 190)
+            
+            PricingView(title: "Pro", price: "$19", textColor: .white, bgColor: .yellow, icon: "cursorarrow.rays")
+            
             PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "wand.and.rays")
-                
+                .offset(x: 0, y: -210)
+            
         }
     }
 }
